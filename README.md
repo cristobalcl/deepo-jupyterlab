@@ -1,10 +1,12 @@
 JupyterLab over ufoym/deepo
 ===========================
 
+Run [JupyterLab](https://jupyterlab.readthedocs.io) over [ufoym/deepo](https://github.com/ufoym/deepo).
+
 Usage
 -----
 
-## Basic
+### Basic
 
 ```
 nvidia-docker run -it -p 8888:8888 cristobalcl/deepo:jupyterlab
@@ -12,7 +14,7 @@ nvidia-docker run -it -p 8888:8888 cristobalcl/deepo:jupyterlab
 
 This will run the server with the default password `jupyterlab`.
 
-## Advanced
+### Advanced
 
 To set a password and mount some directories run like this:
 
