@@ -14,6 +14,11 @@ nvidia-docker run -it -p 8888:8888 cristobalcl/deepo:jupyterlab
 
 This will run the server with the default password `jupyterlab`.
 
+Open the app navigating to `http://localhost:8888`.
+
+**WARNING:** the notebooks you write will be lost when killing the server. To
+get persistence use the advanced mode.
+
 ### Advanced
 
 To set a password and mount some directories run like this:
@@ -30,6 +35,8 @@ nvidia-docker run -it -p 8888:8888 \
     cristobalcl/deepo:jupyterlab \
     run "p4ssw0rd"
 ```
+
+**IMPORTANT:** make sure you save your notebooks inside `/notebooks`.
 
 Build
 -----
